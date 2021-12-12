@@ -1,7 +1,14 @@
 import type {FC} from "react";
 import Nav from "./Nav";
 import Link from "next/link";
-import {FacebookIcon,TwitterIcon,InstagramIcon,GithubIcon, LinkedinIcon} from "./Icons";
+import {
+    FacebookIcon,
+    TwitterIcon,
+    InstagramIcon,
+    GithubIcon,
+    LinkedinIcon,
+    PlayIcon
+} from "./Icons";
 
 const Header:FC = ()=>{
     return(
@@ -44,8 +51,9 @@ const Header:FC = ()=>{
                         <p className = "mt-4 text-xl text-white">I'm Ashish Prajapati, Professional web developer with <br/>long time experience in this field</p>
 
                         {/* button */}
-                        <div>
-                            <button className = "border-2 border-red-dark px-6 py-2 text-white font-oswald rounded-full mt-4">My Portfolio</button>
+                        <div className = "flex space-x-4 items-center mt-6">
+                            <button className = "border-2 border-red-dark px-6 py-2 text-white font-oswald rounded-full">My Portfolio</button>
+                            <button className = "bg-red-dark px-8 py-3 rounded-full"><PlayIcon width = {20} height = {20} /></button>
                         </div>
                     </div>
                 </div>

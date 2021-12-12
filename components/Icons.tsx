@@ -36,5 +36,9 @@ const LinkedinIcon:FC<IconProps> = ({width,height})=>{
     )
 }
 
-
-export {FacebookIcon,TwitterIcon,InstagramIcon,GithubIcon,LinkedinIcon};
+const PlayIcon:FC<IconProps> = ({width,height})=>{
+    return(
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width={width} height={height} viewBox="0 0 172 172" style={{fill: '#000000'}}><g fill="none" fillRule="nonzero" stroke="none" strokeWidth={1} strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit={10} strokeDasharray strokeDashoffset={0} fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{mixBlendMode: 'normal'}}><path d="M0,172v-172h172v172z" fill="none" /><g fill="#ffffff"><path d="M155.875,81.40975l-122.17912,-65.1235l-9.50838,5.20569v129.01612l9.50838,5.20569l122.17913,-65.1235z" /></g></g></svg>
+    )
+}
+export {FacebookIcon,TwitterIcon,InstagramIcon,GithubIcon,LinkedinIcon,PlayIcon};
